@@ -1,0 +1,24 @@
+<main class="main">
+  <div class="content">
+    <div class="left-side">
+      <img src="assets/angular.svg" alt="Angular Logo" class="angular-logo"/>
+      <h1>¡Felicitaciones! Nuestra aplicación ya está funcionando. 🎉<br>
+        y podemos ver nuestros 4 proyectos.🎉</h1>
+      <p>Ahora podremos acceder a los módulos desde aquí:</p>
+    </div>
+
+    <div class="divider" role="separator" aria-label="Divider"></div>
+
+    <div class="right-side">
+      <div class="pill-group">
+        <button
+            class="pill"
+            *ngFor="let item of pills"
+            (click)="openLink(item.link)"
+            >
+            {{ item.title }}
+        </button>
+      </div>
+    </div>
+  </div>
+</main>

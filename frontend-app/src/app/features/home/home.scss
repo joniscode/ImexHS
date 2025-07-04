@@ -1,0 +1,120 @@
+
+main{
+  align-items: center;         
+  display: flex;
+  justify-content: center;     
+  min-height: 100vh;          
+  padding: 2rem;;
+}
+.content {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.left-side, .right-side {
+  display: flex;
+  flex: 1 1 45%;
+  flex-direction: column;
+  justify-content: center;
+  margin: 25px;
+}
+
+.angular-logo{
+  width: 250px;
+}
+
+.divider{
+  color: #6f42c1;
+  display: block;
+}
+
+.pill-group {
+  display: block;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  width: 100%;
+}
+
+.pill {
+  aspect-ratio: 1 / 1;
+  background: color-mix(in srgb, var(--pill-accent, #007bff) 10%, #fff);
+  border: none;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  color: var(--pill-accent, #007bff);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  height: 60px;
+  margin-bottom: 25px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  width: 350px;
+}
+
+.pill:hover {
+  background: color-mix(in srgb, var(--pill-accent, #007bff) 25%, #fff);
+  transform: translateY(-3px);
+}
+
+.pill-group .pill:nth-child(6n + 1) {
+  --pill-accent: #007bff; // azul
+}
+.pill-group .pill:nth-child(6n + 2) {
+  --pill-accent: #6f42c1; // púrpura
+}
+.pill-group .pill:nth-child(6n + 3) {
+  --pill-accent: #e83e8c; // rosado
+}
+.pill-group .pill:nth-child(6n + 4) {
+  --pill-accent: #fd7e14; // naranja
+}
+.pill-group .pill:nth-child(6n + 5) {
+  --pill-accent: #20c997; // verde
+}
+.pill-group .pill:nth-child(6n + 6) {
+  --pill-accent: #dc3545; // rojo
+}
+
+@media (max-width: 1063px) {
+  .pill-group{
+    display: block;
+    flex: 1 1 45%;
+    width: 100%;
+  }
+  .pill {
+    margin: 25px;
+  }
+}
+
+@media (max-width: 913px){
+.pill {
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+  .left-side, .right-side {
+    align-items: center;
+    flex: 1 1 100%;
+    margin: 0px 5px;
+    text-align: center;
+  }
+
+  .pill-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pill {
+    height: 90%;
+    margin: 15px;
+    width: 40%;
+  }
+  .content {
+  gap: 0.5rem;
+}
+}
