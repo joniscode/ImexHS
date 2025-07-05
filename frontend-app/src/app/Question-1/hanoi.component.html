@@ -1,0 +1,19 @@
+<main class="hanoi-container">
+  <h1>Ejercicio 1: Recursión y Colores</h1>
+  <p>Componentes anidados recursivamente con colores dinámicos.</p>
+
+  <label for="depthRange">Nivel de profundidad: {{ depth }}</label>
+  <input
+    type="range"
+    id="depthRange"
+    min="1"
+    max="10"
+    [(ngModel)]="depth"
+  />
+
+  <app-recursive-box [depth]="depth"></app-recursive-box>
+  <div class="python-reference">
+    <button (click)="showPythonHint()">🐍 Ver solución en consola (Python)</button>
+    <small>Ubicación: <code>Question-1/recursion_with_colors.py</code></small>
+  </div>
+</main>

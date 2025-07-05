@@ -2,5 +2,13 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './features/home/home';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent  }
+  {
+    path: '',
+    component: HomeComponent,
+  },
+  {
+    path: 'question-1-hanoi',
+    loadComponent: () =>
+      import('./Question-1/hanoi.component').then(m => m.HanoiComponent),
+  },
 ];

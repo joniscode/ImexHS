@@ -15,9 +15,13 @@ Este proyecto es una aplicación de inicio personalizada construida con Angular.
 frontend-app/
 ├── src/ 
 │ ├── app/
-│ │  └── features
-│ │       ├── spp.html/ # Punto disponible para la pantalla inicial
-│ │       └── app.scss/ # Estilos globales para la pantalla principal
+│ │  ├└─ features
+│ │  │    ├── spp.html/ # Punto disponible para la pantalla inicial
+│ │  │    └── app.scss/ # Estilos globales para la pantalla principal
+│ │  ├── Question-1
+│ │  ├── Question-2
+│ │  ├── Question-3
+│ │  └── Question-4
 │ ├── assets/ # Imágenes y recursos estáticos
 │ └── main.ts # Punto de entrada principal
 ├── angular.json # Configuración de Angular CLI
@@ -30,3 +34,52 @@ frontend-app/
 
 - npm install
 - ng serve
+
+
+## EJERCICIO 1
+
+Este módulo demuestra el uso de **componentes recursivos** en Angular mediante una visualización anidada de cajas de colores, donde cada componente hijo representa una menor profundidad en la recursión. El nivel de recursión se puede ajustarse dinámicamente desde el navegador.
+
+---
+
+## 📂 Ubicación del módulo
+
+`src/app/Question-1/`
+
+---
+
+## 🚀 Cómo funciona
+
+- Se ha creado un componente principal `HanoiComponent`.
+- Este componente renderiza un componente hijo `RecursiveBoxComponent` recursivamente.
+- Cada nivel de profundidad se representa visualmente con una caja anidada de diferente color.
+- Un **control deslizante (slider)** permite cambiar dinámicamente la profundidad (`depth`) desde el navegador.
+
+---
+
+## 📸 Vista previa
+
+- Cambia el valor del slider (`1 - 10`) y observa cómo se renderizan las cajas de forma anidada.
+- Cada caja se genera con un color dinámico, usando el valor de `depth` como base.
+
+---
+
+## 🛠️ Archivos principales
+
+- `hanoi.component.ts`: Componente principal del ejercicio.
+- `hanoi.component.html`: Vista que incluye el control deslizante y renderiza el componente recursivo.
+- `recursive-box.component.ts`: Componente recursivo, se llama a sí mismo según el valor de `depth`.
+- `recursive-box.component.html`: Renderiza visualmente una caja y su hijo recursivo.
+- `recursive-box.component.scss`: Estilos para la presentación anidada.
+
+---
+
+## 📦 Tecnologías usadas
+
+- Angular 17+
+- Standalone Components
+- `ngModel` con `FormsModule`
+- Estilos en SCSS
+- Color dinámico con lógica TypeScript
+
+

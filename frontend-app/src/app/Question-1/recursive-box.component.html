@@ -1,0 +1,3 @@
+<div *ngIf="depth > 0" class="box" [style.background]="getColor()">
+  <app-recursive-box [depth]="depth - 1"></app-recursive-box>
+</div>
