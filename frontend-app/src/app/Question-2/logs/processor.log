@@ -1,0 +1,45 @@
+ERROR:file_processor:Error reading folder 'data': [WinError 3] El sistema no puede encontrar la ruta especificada: 'data\\data'
+ERROR:file_processor:Error reading CSV 'sample-02-csv.csv': 'utf-8' codec can't decode byte 0xa3 in position 45: invalid start byte
+ERROR:file_processor:Error reading DICOM 'sample-02-dicom.dcm': File is missing DICOM File Meta Information header or the 'DICM' prefix is missing from the header. Use force=True to force reading.
+ERROR:file_processor:Error reading folder 'data': [WinError 3] El sistema no puede encontrar la ruta especificada: 'data\\data'
+ERROR:file_processor:Error reading CSV 'sample-02-csv.csv': 'utf-8' codec can't decode byte 0xa3 in position 45: invalid start byte
+ERROR:file_processor:Error reading DICOM 'sample-02-dicom.dcm': File is missing DICOM File Meta Information header or the 'DICM' prefix is missing from the header. Use force=True to force reading.
+ERROR:file_processor:Error reading DICOM 'sample-02-dicom.dcm': File is missing DICOM File Meta Information header or the 'DICM' prefix is missing from the header. Use force=True to force reading.
+ERROR:file_processor:Error reading CSV 'sample-02-csv.csv': 'utf-8' codec can't decode byte 0xa3 in position 45: invalid start byte
+ERROR:file_processor:Error reading folder 'data': [WinError 3] El sistema no puede encontrar la ruta especificada: 'data\\data'
+ERROR:file_processor:Error reading DICOM 'sample-02-dicom.dcm': File is missing DICOM File Meta Information header or the 'DICM' prefix is missing from the header. Use force=True to force reading.
+ERROR:file_processor:Error reading folder 'data': [WinError 3] El sistema no puede encontrar la ruta especificada: 'data\\data'
+ERROR:file_processor:Error reading CSV 'sample-02-csv.csv': 'utf-8' codec can't decode byte 0xa3 in position 45: invalid start byte
+ERROR:file_processor:Error reading CSV 'sample-02-csv.csv': 'utf-8' codec can't decode byte 0xa3 in position 45: invalid start byte
+ERROR:file_processor:Error reading DICOM 'sample-02-dicom.dcm': File is missing DICOM File Meta Information header or the 'DICM' prefix is missing from the header. Use force=True to force reading.
+ERROR:file_processor:Error reading DICOM 'sample-02-dicom.dcm': File is missing DICOM File Meta Information header or the 'DICM' prefix is missing from the header. Use force=True to force reading.
+ERROR:file_processor:Error reading DICOM 'sample-02-dicom.dcm': File is missing DICOM File Meta Information header or the 'DICM' prefix is missing from the header. Use force=True to force reading.
+ERROR:file_processor:Error reading CSV 'sample-02-csv.csv': 'utf-8' codec can't decode byte 0xa3 in position 45: invalid start byte
+ERROR:file_processor:Error reading folder 'data': [WinError 3] El sistema no puede encontrar la ruta especificada: 'data\\data'
+ERROR:file_processor:Error reading folder 'data': [WinError 3] El sistema no puede encontrar la ruta especificada: 'data\\data'
+ERROR:file_processor:Error reading folder 'data': [WinError 3] El sistema no puede encontrar la ruta especificada: 'data\\data'
+ERROR:file_processor:Error reading DICOM 'sample-02-dicom.dcm': File is missing DICOM File Meta Information header or the 'DICM' prefix is missing from the header. Use force=True to force reading.
+ERROR:file_processor:Error reading DICOM 'sample-02-dicom.dcm': File is missing DICOM File Meta Information header or the 'DICM' prefix is missing from the header. Use force=True to force reading.
+ERROR:file_processor:Error reading CSV 'sample-02-csv.csv': 'utf-8' codec can't decode byte 0xa3 in position 45: invalid start byte
+ERROR:file_processor:Error reading CSV 'sample-02-csv.csv': 'utf-8' codec can't decode byte 0xa3 in position 45: invalid start byte
+ERROR:file_processor:Error reading folder 'data': [WinError 3] El sistema no puede encontrar la ruta especificada: 'data\\data'
+ERROR:file_processor:Error reading DICOM 'sample-02-dicom.dcm': File is missing DICOM File Meta Information header or the 'DICM' prefix is missing from the header. Use force=True to force reading.
+ERROR:file_processor:Error reading folder 'data': [WinError 3] El sistema no puede encontrar la ruta especificada: 'data\\data'
+ERROR:file_processor:Error reading CSV 'sample-02-csv.csv': 'utf-8' codec can't decode byte 0xa3 in position 45: invalid start byte
+ERROR:file_processor:Error reading folder 'data': [WinError 3] El sistema no puede encontrar la ruta especificada: 'data\\data'
+ERROR:file_processor:Error reading CSV 'sample-02-csv.csv': 'utf-8' codec can't decode byte 0xa3 in position 45: invalid start byte
+ERROR:file_processor:Error reading DICOM 'sample-02-dicom.dcm': File is missing DICOM File Meta Information header or the 'DICM' prefix is missing from the header. Use force=True to force reading.
+ERROR:file_processor:Error reading folder 'data': [WinError 3] El sistema no puede encontrar la ruta especificada: 'C:\\CLASES_TOTAL\\ImexHS\\frontend-app\\src\\app\\Question-2\\data\\data'
+ERROR:file_processor:Error reading CSV 'sample-02-csv.csv': 'utf-8' codec can't decode byte 0xa3 in position 45: invalid start byte
+ERROR:file_processor:Error reading DICOM 'sample-02-dicom.dcm': File is missing DICOM File Meta Information header or the 'DICM' prefix is missing from the header. Use force=True to force reading.
+ERROR:file_processor:Error reading DICOM 'sample-02-dicom.dcm': File is missing DICOM File Meta Information header or the 'DICM' prefix is missing from the header. Use force=True to force reading.
+ERROR:file_processor:Error reading DICOM 'sample-02-dicom.dcm': File is missing DICOM File Meta Information header or the 'DICM' prefix is missing from the header. Use force=True to force reading.
+ERROR:file_processor:Error reading DICOM 'sample-02-dicom.dcm': File is missing DICOM File Meta Information header or the 'DICM' prefix is missing from the header. Use force=True to force reading.
+ERROR:file_processor:Error reading CSV 'sample-02-csv.csv': 'utf-8' codec can't decode byte 0xa3 in position 45: invalid start byte
+ERROR:file_processor:Error reading folder 'data': [WinError 3] El sistema no puede encontrar la ruta especificada: 'C:\\CLASES_TOTAL\\ImexHS\\frontend-app\\src\\app\\Question-2\\data\\data'
+ERROR:file_processor:Error reading DICOM 'sample-02-dicom.dcm': 'FileDataset' object has no attribute 'PatientName'
+ERROR:file_processor:Error reading DICOM 'sample-02-dicom.dcm': 'FileDataset' object has no attribute 'PatientName'
+ERROR:file_processor:Error reading folder 'data': [WinError 3] El sistema no puede encontrar la ruta especificada: 'C:\\CLASES_TOTAL\\ImexHS\\frontend-app\\src\\app\\Question-2\\data\\data'
+ERROR:file_processor:Error reading folder 'data': [WinError 3] El sistema no puede encontrar la ruta especificada: 'C:\\CLASES_TOTAL\\ImexHS\\frontend-app\\src\\app\\Question-2\\data\\data'
+ERROR:file_processor:Error reading folder 'data': [WinError 3] El sistema no puede encontrar la ruta especificada: 'C:\\CLASES_TOTAL\\ImexHS\\frontend-app\\src\\app\\Question-2\\data\\data'
+ERROR:file_processor:Error reading DICOM 'sample-02-dicom.dcm': 'FileDataset' object has no attribute 'PatientName'

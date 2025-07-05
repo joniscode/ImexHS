@@ -11,4 +11,9 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./Question-1/hanoi.component').then(m => m.HanoiComponent),
   },
+  {
+    path: 'question-2-fileprocessor',
+    loadComponent: () =>
+      import('./Question-2/question-2.component').then((m) => m.Question2Component)
+  }
 ];
