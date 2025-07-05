@@ -43,3 +43,20 @@ ERROR:file_processor:Error reading folder 'data': [WinError 3] El sistema no pue
 ERROR:file_processor:Error reading folder 'data': [WinError 3] El sistema no puede encontrar la ruta especificada: 'C:\\CLASES_TOTAL\\ImexHS\\frontend-app\\src\\app\\Question-2\\data\\data'
 ERROR:file_processor:Error reading folder 'data': [WinError 3] El sistema no puede encontrar la ruta especificada: 'C:\\CLASES_TOTAL\\ImexHS\\frontend-app\\src\\app\\Question-2\\data\\data'
 ERROR:file_processor:Error reading DICOM 'sample-02-dicom.dcm': 'FileDataset' object has no attribute 'PatientName'
+ERROR:file_processor:Error reading CSV '': [Errno 2] No such file or directory: 'C:\\CLASES_TOTAL\\ImexHS\\frontend-app\\src\\app\\Question-2\\data\\'
+ERROR:file_processor:Error reading DICOM '': [Errno 2] No such file or directory: 'C:\\CLASES_TOTAL\\ImexHS\\frontend-app\\src\\app\\Question-2\\data\\'
+ERROR:file_processor:Error reading CSV '': [Errno 2] No such file or directory: 'C:\\CLASES_TOTAL\\ImexHS\\frontend-app\\src\\app\\Question-2\\data\\'
+ERROR:file_processor:Error reading CSV '': [Errno 2] No such file or directory: 'C:\\CLASES_TOTAL\\ImexHS\\frontend-app\\src\\app\\Question-2\\data\\'
+ERROR:file_processor:Error reading DICOM '': [Errno 2] No such file or directory: 'C:\\CLASES_TOTAL\\ImexHS\\frontend-app\\src\\app\\Question-2\\data\\'
+ERROR:file_processor:Error reading folder 'data': No existe la carpeta: C:\CLASES_TOTAL\ImexHS\frontend-app\src\app\Question-2\data\data
+ERROR:file_processor:Error reading CSV '': [Errno 2] No such file or directory: 'C:\\CLASES_TOTAL\\ImexHS\\frontend-app\\src\\app\\Question-2\\data\\'
+ERROR:file_processor:Error reading folder 'data': No existe la carpeta: C:\CLASES_TOTAL\ImexHS\frontend-app\src\app\Question-2\data\data
+ERROR:file_processor:Error reading folder 'data': No existe la carpeta: C:\CLASES_TOTAL\ImexHS\frontend-app\src\app\Question-2\data\data
+ERROR:file_processor:Error reading CSV 'sample-02-csv.csv': mean requires at least one data point
+ERROR:file_processor:Error reading CSV '': [Errno 2] No such file or directory: 'C:\\CLASES_TOTAL\\ImexHS\\frontend-app\\src\\app\\Question-2\\data\\'
+ERROR:file_processor:Error reading DICOM '': [Errno 2] No such file or directory: 'C:\\CLASES_TOTAL\\ImexHS\\frontend-app\\src\\app\\Question-2\\data\\'
+ERROR:file_processor:Error reading folder 'data': No existe la carpeta: C:\CLASES_TOTAL\ImexHS\frontend-app\src\app\Question-2\data\data
+ERROR:file_processor:Error reading CSV '': [Errno 2] No such file or directory: 'C:\\CLASES_TOTAL\\ImexHS\\frontend-app\\src\\app\\Question-2\\data\\'
+ERROR:file_processor:Error reading DICOM '': [Errno 2] No such file or directory: 'C:\\CLASES_TOTAL\\ImexHS\\frontend-app\\src\\app\\Question-2\\data\\'
+ERROR:file_processor:Error reading DICOM '': [Errno 2] No such file or directory: 'C:\\CLASES_TOTAL\\ImexHS\\frontend-app\\src\\app\\Question-2\\data\\'
+ERROR:file_processor:Error reading CSV '': [Errno 2] No such file or directory: 'C:\\CLASES_TOTAL\\ImexHS\\frontend-app\\src\\app\\Question-2\\data\\'

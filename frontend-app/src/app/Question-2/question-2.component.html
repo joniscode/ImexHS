@@ -1,13 +1,16 @@
 <main class="fileprocessor-container">
-  <h1>🗃️ Ejercicio 2: Archivos y datos</h1>
+  <h1>🗃️ Ejercicio 2: Archivos y Datos</h1>
 
   <!-- 📁 Listar Carpeta -->
   <section>
     <h2>📁 Listar Carpeta</h2>
     <form (ngSubmit)="onListFolder()" #folderForm="ngForm">
       <input [(ngModel)]="folderName" name="folderName" required placeholder="Ej: data" />
-      <label><input type="checkbox" [(ngModel)]="showDetails" name="showDetails" /> Ver detalles</label>
-      <button type="submit">Listar</button>
+      <label>
+        <input type="checkbox" [(ngModel)]="showDetails" name="showDetails" />
+        Ver detalles
+      </label>
+      <button type="submit">📂 Listar</button>
     </form>
   </section>
 
@@ -15,9 +18,15 @@
   <section>
     <h2>📊 Leer CSV</h2>
     <form (ngSubmit)="onReadCsv()" #csvForm="ngForm">
-      <input [(ngModel)]="csvFile" name="csvFile" required placeholder="sample-02-csv.csv" />
-      <label><input type="checkbox" [(ngModel)]="csvSummary" name="csvSummary" /> Ver resumen</label>
-      <button type="submit">Leer CSV</button>
+      <select [(ngModel)]="csvFile" name="csvFile" required class="styled-select">
+        <option value="" disabled selected>Selecciona un archivo CSV</option>
+        <option *ngFor="let f of csvFiles" [value]="f">{{ f }}</option>
+      </select>
+      <label>
+        <input type="checkbox" [(ngModel)]="csvSummary" name="csvSummary" />
+        Ver resumen
+      </label>
+      <button type="submit">📈 Leer CSV</button>
     </form>
   </section>
 
@@ -25,9 +34,15 @@
   <section>
     <h2>🧠 Leer DICOM</h2>
     <form (ngSubmit)="onReadDicom()" #dicomForm="ngForm">
-      <input [(ngModel)]="dicomFile" name="dicomFile" required placeholder="sample-02-dicom.dcm" />
-      <label><input type="checkbox" [(ngModel)]="extractImage" name="extractImage" /> Imagen adicional</label>
-      <button type="submit">Leer DICOM</button>
+      <select [(ngModel)]="dicomFile" name="dicomFile" required class="styled-select">
+        <option value="" disabled selected>Selecciona un archivo DICOM</option>
+        <option *ngFor="let file of dicomFiles" [value]="file">{{ file }}</option>
+      </select>
+      <label>
+        <input type="checkbox" [(ngModel)]="extractImage" name="extractImage" />
+        Imagen adicional
+      </label>
+      <button type="submit">🧾 Leer DICOM</button>
     </form>
   </section>
 
@@ -36,5 +51,10 @@
     <h2>📤 Resultado</h2>
     <div *ngIf="loading" class="loader">⏳ Procesando...</div>
     <pre *ngIf="!loading && result">{{ result }}</pre>
+    <button *ngIf="reportReady" (click)="downloadReport()">📥 Descargar Reporte CSV</button>
+    <div *ngIf="dicomImageUrl">
+      <h3>🖼️ Imagen extraída:</h3>
+      <img *ngIf="dicomImageUrl" [src]="dicomImageUrl" alt="Imagen DICOM exportada" style="max-width: 100%; margin-top: 1rem;" />
+    </div>
   </section>
 </main>

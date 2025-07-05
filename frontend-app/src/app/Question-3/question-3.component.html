@@ -1,0 +1,26 @@
+<main class="json-upload-container">
+  <h1>📦 Cargar archivo JSON (Ejercicio 3)</h1>
+
+  <section>
+    <h2>📁 Subir archivo</h2>
+    <form (ngSubmit)="onUpload()" #jsonForm="ngForm">
+      <input type="file" (change)="onFileChange($event)" accept=".json" required />
+      <button type="submit" [disabled]="!selectedFile">Enviar</button>
+      <button type="button" class="clear" (click)="clear()">Limpiar</button>
+    </form>
+  </section>
+
+  <section *ngIf="loading" class="loader">
+    ⏳ Procesando archivo...
+  </section>
+
+  <section *ngIf="result && !loading" class="result-card">
+    <h3>✅ Resultado</h3>
+    <pre>{{ result | json }}</pre>
+  </section>
+
+  <section *ngIf="error" class="error-card">
+    <h3>❌ Error</h3>
+    <pre>{{ error }}</pre>
+  </section>
+</main>

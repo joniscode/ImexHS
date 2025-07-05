@@ -6,19 +6,21 @@
 
   h1 {
     font-size: 1.8rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
   }
 
   section {
     background: #f9f9f9;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
 
     h2 {
       margin-top: 0;
       font-size: 1.3rem;
+      color: #333;
     }
 
     form {
@@ -29,10 +31,21 @@
 
       input[type='text'],
       input[type='checkbox'],
-      input {
+      input,
+      select {
         padding: 0.4rem;
         border: 1px solid #ccc;
         border-radius: 0.4rem;
+        font-size: 1rem;
+      }
+
+      .styled-select {
+        padding: 0.4rem;
+        border: 1px solid #ccc;
+        border-radius: 0.4rem;
+        background: #fff;
+        appearance: none;
+        font-size: 1rem;
       }
 
       button {
@@ -71,5 +84,18 @@
       border-radius: 6px;
       margin-top: 1rem;
     }
+  }
+}
+button {
+  margin-top: 1rem;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #005fa3;
   }
 }

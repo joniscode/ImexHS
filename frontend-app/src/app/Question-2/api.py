@@ -3,6 +3,7 @@ from pydantic import BaseModel
 from typing import List, Optional
 from file_processor import FileProcessor
 from fastapi.middleware.cors import CORSMiddleware
+import os
 
 app = FastAPI()
 
@@ -26,7 +27,7 @@ class CsvRequest(BaseModel):
 
 class DicomRequest(BaseModel):
     filename: str
-    tags: Optional[List[List[int]]] = None  # Acepta [[16, 16], [8, 96]]
+    tags: Optional[List[List[int]]] = None
     extract_image: bool = False
 
 @app.post("/list-folder")
@@ -44,3 +45,21 @@ def read_dicom(data: DicomRequest):
         tags=[(int(tag[0]), int(tag[1])) for tag in data.tags] if data.tags else None,
         extract_image=data.extract_image
     )
+
+@app.get("/list-dicoms")
+def list_dicoms():
+    return processor.list_dicom_files()
+
+@app.get("/list-csvs")
+def list_csvs():
+    return processor.list_csv_files()
+
+
+from fastapi.staticfiles import StaticFiles
+# 🖼️ Servir carpeta de imágenes DICOM
+os.makedirs("output", exist_ok=True)
+app.mount("/output", StaticFiles(directory="output"), name="output")
+
+# 📄 Servir carpeta de reportes CSV
+os.makedirs("reports", exist_ok=True)
+app.mount("/reports", StaticFiles(directory="reports"), name="reports")
