@@ -61,5 +61,5 @@ ng serve      # http://localhost:4200
 - instalar extensión para imagenes de ser necesario
 
 ## Backend
-uvicorn medical_api:app --reload #en la base del proyecto
+uvicorn api:app --reload --port 8000 #en la base del proyecto // en el ejercicio 2, 3 y 4 se inicia desde cada raiz o base de proyecto para su funcionamiento
 # directamente servicial en el frontend

@@ -60,3 +60,12 @@ ERROR:file_processor:Error reading CSV '': [Errno 2] No such file or directory: 
 ERROR:file_processor:Error reading DICOM '': [Errno 2] No such file or directory: 'C:\\CLASES_TOTAL\\ImexHS\\frontend-app\\src\\app\\Question-2\\data\\'
 ERROR:file_processor:Error reading DICOM '': [Errno 2] No such file or directory: 'C:\\CLASES_TOTAL\\ImexHS\\frontend-app\\src\\app\\Question-2\\data\\'
 ERROR:file_processor:Error reading CSV '': [Errno 2] No such file or directory: 'C:\\CLASES_TOTAL\\ImexHS\\frontend-app\\src\\app\\Question-2\\data\\'
+ERROR:file_processor:Error leyendo CSV '': [Errno 2] No such file or directory: 'C:\\CLASES_TOTAL\\ImexHS\\frontend-app\\src\\app\\Question-2\\data\\'
+ERROR:file_processor:Error leyendo DICOM '': [Errno 2] No such file or directory: 'C:\\CLASES_TOTAL\\ImexHS\\frontend-app\\src\\app\\Question-2\\data\\'
+ERROR:file_processor:Error leyendo CSV '': [Errno 2] No such file or directory: 'C:\\CLASES_TOTAL\\ImexHS\\frontend-app\\src\\app\\Question-2\\data\\'
+ERROR:file_processor:Error leyendo DICOM '': [Errno 2] No such file or directory: 'C:\\CLASES_TOTAL\\ImexHS\\frontend-app\\src\\app\\Question-2\\data\\'
+ERROR:file_processor:Error leyendo CSV '': [Errno 2] No such file or directory: 'C:\\CLASES_TOTAL\\ImexHS\\frontend-app\\src\\app\\Question-2\\data\\'
+ERROR:file_processor:Error leyendo DICOM '': [Errno 2] No such file or directory: 'C:\\CLASES_TOTAL\\ImexHS\\frontend-app\\src\\app\\Question-2\\data\\'
+ERROR:file_processor:Error leyendo CSV 'sample-02-csv.csv': mean requires at least one data point
+ERROR:file_processor:Error leyendo CSV 'sample-02-csv.csv': mean requires at least one data point
+ERROR:file_processor:Error leyendo CSV 'sample-02-csv.csv': mean requires at least one data point
