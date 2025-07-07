@@ -1,0 +1,30 @@
+<div class="p-4">
+  <h2 class="text-xl font-bold mb-4">📋 Historial de resultados</h2>
+
+  <ng-container *ngIf="results$ | async as results">
+    <table class="w-full border" *ngIf="results.length; else noData">
+      <thead>
+        <tr class="bg-gray-200">
+          <th class="border px-2">#</th>
+          <th class="border px-2">Imagen</th>
+          <th class="border px-2">Puntos</th>
+          <th class="border px-2">Dentro</th>
+          <th class="border px-2">Área estimada</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let r of results; let i = index">
+          <td class="border px-2">{{ i + 1 }}</td>
+          <td class="border px-2">{{ r.imageName }}</td>
+          <td class="border px-2">{{ r.totalPoints }}</td>
+          <td class="border px-2">{{ r.pointsInside }}</td>
+          <td class="border px-2">{{ r.estimatedArea | number : '1.0-2' }} px²</td>
+        </tr>
+      </tbody>
+    </table>
+  </ng-container>
+
+  <ng-template #noData>
+    <p class="italic text-gray-600">No hay resultados almacenados.</p>
+  </ng-template>
+</div>

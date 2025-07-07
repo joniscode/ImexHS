@@ -11,7 +11,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./question-2.component.scss']
 })
 export class Question2Component {
-  // 📥 Inputs del formulario
+  
   folderName = '';
   showDetails = false;
   csvFile = '';
@@ -21,7 +21,7 @@ export class Question2Component {
   dicomImageUrl: string = '';
   reportReady = false;
 
-  // 📤 Resultados
+ 
   result = '';
   loading = false;
   dicomFiles: string[] = [];
@@ -74,7 +74,7 @@ export class Question2Component {
     next: res => {
       this.result = res;
       this.loading = false;
-      if (this.csvSummary) this.reportReady = true; // habilita el botón
+      if (this.csvSummary) this.reportReady = true; 
     },
     error: err => {
       this.result = '❌ Error al leer el archivo CSV.';
@@ -86,13 +86,13 @@ export class Question2Component {
   onReadDicom() {
   this.loading = true;
   this.result = '';
-  this.dicomImageUrl = '';  // Reinicia
+  this.dicomImageUrl = ''; 
 
   this.http.post('http://localhost:8000/read-dicom', {
     filename: this.dicomFile,
     tags: [
-      [0x0010, 0x0010],  // Paciente
-      [0x0008, 0x0060]   // Modalidad
+      [0x0010, 0x0010], 
+      [0x0008, 0x0060] 
     ],
     extract_image: this.extractImage
   }, { responseType: 'text' }).subscribe({

@@ -1,0 +1,60 @@
+2025-07-06 19:28:57,960 - ERROR - Error en elemento aabbcc1: (sqlite3.IntegrityError) UNIQUE constraint failed: elements.id
+[SQL: INSERT INTO elements (id, device_id, avg_before, avg_after, data_size, created_date, updated_date) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('aabbcc1', 1, 51.13333333333333, 0.5326388888888889, 30, '2025-07-07 00:28:57.960829', '2025-07-07 00:28:57.960829')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-07-06 19:29:09,857 - ERROR - Error en elemento aabbcc1: (sqlite3.IntegrityError) UNIQUE constraint failed: elements.id
+[SQL: INSERT INTO elements (id, device_id, avg_before, avg_after, data_size, created_date, updated_date) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('aabbcc1', 3, 50.010948, 0.50010948, 250000, '2025-07-07 00:29:09.857782', '2025-07-07 00:29:09.857782')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-07-06 19:32:32,468 - ERROR - Error en elemento aabbcc1: (sqlite3.IntegrityError) UNIQUE constraint failed: elements.id
+[SQL: INSERT INTO elements (id, device_id, avg_before, avg_after, data_size, created_date, updated_date) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('aabbcc1', 1, 66.3, 0.6765306122448979, 50, '2025-07-07 00:32:32.468086', '2025-07-07 00:32:32.468086')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-07-06 19:32:37,839 - ERROR - Error en elemento aabbcc1: (sqlite3.IntegrityError) UNIQUE constraint failed: elements.id
+[SQL: INSERT INTO elements (id, device_id, avg_before, avg_after, data_size, created_date, updated_date) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('aabbcc1', 1, 51.13333333333333, 0.5326388888888889, 30, '2025-07-07 00:32:37.838646', '2025-07-07 00:32:37.838646')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-07-06 19:45:45,567 - ERROR - Error en elemento aabbcc1: (sqlite3.IntegrityError) UNIQUE constraint failed: elements.id
+[SQL: INSERT INTO elements (id, device_id, avg_before, avg_after, data_size, created_date, updated_date) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('aabbcc1', 1, 51.13333333333333, 0.5326388888888889, 30, '2025-07-07 00:45:45.566733', '2025-07-07 00:45:45.566733')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-07-06 19:45:53,252 - ERROR - Error en elemento aabbcc1: (sqlite3.IntegrityError) UNIQUE constraint failed: elements.id
+[SQL: INSERT INTO elements (id, device_id, avg_before, avg_after, data_size, created_date, updated_date) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('aabbcc1', 3, 50.010948, 0.50010948, 250000, '2025-07-07 00:45:53.252181', '2025-07-07 00:45:53.252181')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-07-06 19:46:17,470 - ERROR - Error en elemento aabbcc1: (sqlite3.IntegrityError) UNIQUE constraint failed: elements.id
+[SQL: INSERT INTO elements (id, device_id, avg_before, avg_after, data_size, created_date, updated_date) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('aabbcc1', 1, 66.3, 0.6765306122448979, 50, '2025-07-07 00:46:17.469539', '2025-07-07 00:46:17.469539')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-07-06 19:51:18,787 - ERROR - Error en elemento aabbcc1: (sqlite3.IntegrityError) UNIQUE constraint failed: elements.id
+[SQL: INSERT INTO elements (id, device_id, avg_before, avg_after, data_size, created_date, updated_date) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('aabbcc1', 1, 51.13333333333333, 0.5326388888888889, 30, '2025-07-07 00:51:18.786697', '2025-07-07 00:51:18.786697')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-07-06 19:54:29,188 - ERROR - Error en elemento aabbcc1: (sqlite3.IntegrityError) UNIQUE constraint failed: elements.id
+[SQL: INSERT INTO elements (id, device_id, avg_before, avg_after, data_size, created_date, updated_date) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('aabbcc1', 3, 50.010948, 0.50010948, 250000, '2025-07-07 00:54:29.187833', '2025-07-07 00:54:29.187833')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-07-06 20:02:57,061 - ERROR - Error en elemento aabbcc1: (sqlite3.IntegrityError) UNIQUE constraint failed: elements.id
+[SQL: INSERT INTO elements (id, device_id, avg_before, avg_after, data_size, created_date, updated_date) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('aabbcc1', 3, 50.010948, 0.50010948, 250000, '2025-07-07 01:02:57.060495', '2025-07-07 01:02:57.060495')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-07-06 20:03:07,726 - ERROR - Error en elemento aabbcc1: (sqlite3.IntegrityError) UNIQUE constraint failed: elements.id
+[SQL: INSERT INTO elements (id, device_id, avg_before, avg_after, data_size, created_date, updated_date) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('aabbcc1', 1, 51.13333333333333, 0.5326388888888889, 30, '2025-07-07 01:03:07.711980', '2025-07-07 01:03:07.711980')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-07-06 20:08:58,393 - ERROR - Error en elemento aabbcc1: (sqlite3.IntegrityError) UNIQUE constraint failed: elements.id
+[SQL: INSERT INTO elements (id, device_id, avg_before, avg_after, data_size, created_date, updated_date) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('aabbcc1', 3, 50.010948, 0.50010948, 250000, '2025-07-07 01:08:58.392674', '2025-07-07 01:08:58.392674')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-07-06 20:15:53,936 - ERROR - Error en elemento aabbcc1: (sqlite3.IntegrityError) UNIQUE constraint failed: elements.id
+[SQL: INSERT INTO elements (id, device_id, avg_before, avg_after, data_size, created_date, updated_date) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('aabbcc1', 3, 50.010948, 0.50010948, 250000, '2025-07-07 01:15:53.935883', '2025-07-07 01:15:53.935883')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-07-06 20:16:18,515 - ERROR - Error en elemento aabbcc1: (sqlite3.IntegrityError) UNIQUE constraint failed: elements.id
+[SQL: INSERT INTO elements (id, device_id, avg_before, avg_after, data_size, created_date, updated_date) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('aabbcc1', 1, 51.13333333333333, 0.5326388888888889, 30, '2025-07-07 01:16:18.514927', '2025-07-07 01:16:18.514927')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-07-06 20:16:59,799 - ERROR - Error en elemento aabbcc1: (sqlite3.IntegrityError) UNIQUE constraint failed: elements.id
+[SQL: INSERT INTO elements (id, device_id, avg_before, avg_after, data_size, created_date, updated_date) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('aabbcc1', 1, 51.13333333333333, 0.5326388888888889, 30, '2025-07-07 01:16:59.798215', '2025-07-07 01:16:59.798215')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)

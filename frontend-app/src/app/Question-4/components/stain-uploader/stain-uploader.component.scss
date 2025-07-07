@@ -1,0 +1,91 @@
+.stain-uploader-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fefefe;
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+
+  section {
+    margin-bottom: 2rem;
+  }
+
+  input[type='file'] {
+    padding: 0.5rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  input[type='range'] {
+    width: 100%;
+    appearance: none;
+    height: 6px;
+    background: #ccc;
+    border-radius: 4px;
+
+    &::-webkit-slider-thumb {
+      appearance: none;
+      width: 16px;
+      height: 16px;
+      background: #007acc;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    &::-moz-range-thumb {
+      width: 16px;
+      height: 16px;
+      background: #007acc;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+
+  .btn {
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &.btn-primary {
+      background: #007acc;
+      color: #fff;
+
+      &:hover {
+        background: #005fa3;
+      }
+
+      &:disabled {
+        background: #aaa;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  img {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .result-area {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .stain-uploader-container {
+    padding: 1rem;
+  }
+}

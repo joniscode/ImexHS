@@ -1,0 +1,41 @@
+.results-table {
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    overflow: hidden;
+
+    th, td {
+      padding: 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #e8e8e8;
+      font-weight: bold;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+  }
+
+  .no-results {
+    font-style: italic;
+    color: #888;
+    margin-top: 1rem;
+  }
+}

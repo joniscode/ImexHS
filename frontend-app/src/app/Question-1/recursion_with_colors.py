@@ -39,9 +39,9 @@ def solve_hanoi(disks: List[Disk]) -> Union[int, List[Move]]:
         return moves
     return -1
 
-# ✅ Prueba rápida aquí
+
 if __name__ == "__main__":
-    # disks = [(3, "red"), (2, "blue"), (1, "red")]
-    disks = [(3, "red"), (2, "blue"), (1, "blue")]  # <- ejemplo sin solución
+    
+    disks = [(3, "red"), (2, "blue"), (1, "blue")] 
     result = solve_hanoi(disks)
     print(result)

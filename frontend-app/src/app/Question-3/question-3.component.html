@@ -1,26 +1,76 @@
-<main class="json-upload-container">
-  <h1>📦 Cargar archivo JSON (Ejercicio 3)</h1>
+<main class="question3-container">
+  <h1>📦 Ejercicio 3: CRUD de Resultados Médicos</h1>
 
+  <!-- 📤 Subida de archivo -->
   <section>
-    <h2>📁 Subir archivo</h2>
-    <form (ngSubmit)="onUpload()" #jsonForm="ngForm">
-      <input type="file" (change)="onFileChange($event)" accept=".json" required />
-      <button type="submit" [disabled]="!selectedFile">Enviar</button>
-      <button type="button" class="clear" (click)="clear()">Limpiar</button>
+    <h2>📁 Subir archivo JSON</h2>
+    <input type="file" (change)="onFileChange($event)"/>
+    <button (click)="onUpload()" [disabled]="!selectedFile">Subir JSON</button>
+    <button (click)="clear()" class="secondary">Limpiar</button>
+
+    <button *ngIf="result" (click)="showJson = !showJson" class="secondary small">
+      {{ showJson ? 'Ocultar JSON' : 'Ver JSON' }}
+    </button>
+
+    <div *ngIf="error"   class="error">{{ error }}</div>
+    <div *ngIf="loading" class="loader">⏳ Procesando…</div>
+    <pre  *ngIf="result">{{ result | json }}</pre>
+  </section>
+
+  <!-- 🔎 Filtros -->
+  <section>
+    <h2>🔍 Filtrar resultados</h2>
+    <form (ngSubmit)="onFilter()">
+      <label>Promedio mín:
+        <input type="number" [(ngModel)]="filters.averageMin" name="min"/>
+      </label>
+      <label>Promedio máx:
+        <input type="number" [(ngModel)]="filters.averageMax" name="max"/>
+      </label>
+      <button type="submit">Aplicar Filtro</button>
     </form>
   </section>
 
-  <section *ngIf="loading" class="loader">
-    ⏳ Procesando archivo...
-  </section>
+  <!-- 📋 Listado -->
+  <section>
+    <h2>📋 Resultados almacenados</h2>
+    <div *ngIf="message" class="success">{{ message }}</div>
 
-  <section *ngIf="result && !loading" class="result-card">
-    <h3>✅ Resultado</h3>
-    <pre>{{ result | json }}</pre>
-  </section>
+    <div class="table-wrapper" *ngIf="entries.length; else noData">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nuevo ID</th>
+            <th>Dispositivo</th>
+            <th>Prom. Antes</th>
+            <th>Prom. Después</th>
+            <th>Tamaño</th>
+            <th>Creado</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
 
-  <section *ngIf="error" class="error-card">
-    <h3>❌ Error</h3>
-    <pre>{{ error }}</pre>
+        <tbody>
+          <tr *ngFor="let row of entries">
+            <td>{{ row.id }}</td>
+            <td><input [(ngModel)]="row.edit_id"  [ngModelOptions]="{standalone:true}"/></td>
+            <td><input [(ngModel)]="row.edit_device" [ngModelOptions]="{standalone:true}"/></td>
+            <td>{{ row.avg_before | number:'1.2-2' }}</td>
+            <td>{{ row.avg_after  | number:'1.2-2' }}</td>
+            <td>{{ row.data_size }}</td>
+            <td>{{ row.created_date | date:'short' }}</td>
+            <td class="actions">
+              <button (click)="onUpdate(row)">Guardar</button>
+              <button (click)="onDelete(row.id)" class="danger">Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <ng-template #noData>
+      <p class="info">No hay registros que coincidan con los filtros.</p>
+    </ng-template>
   </section>
 </main>

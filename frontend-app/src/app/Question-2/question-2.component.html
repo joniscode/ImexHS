@@ -1,7 +1,6 @@
 <main class="fileprocessor-container">
   <h1>🗃️ Ejercicio 2: Archivos y Datos</h1>
 
-  <!-- 📁 Listar Carpeta -->
   <section>
     <h2>📁 Listar Carpeta</h2>
     <form (ngSubmit)="onListFolder()" #folderForm="ngForm">
@@ -14,7 +13,6 @@
     </form>
   </section>
 
-  <!-- 📊 Leer CSV -->
   <section>
     <h2>📊 Leer CSV</h2>
     <form (ngSubmit)="onReadCsv()" #csvForm="ngForm">
@@ -30,7 +28,6 @@
     </form>
   </section>
 
-  <!-- 🧠 Leer DICOM -->
   <section>
     <h2>🧠 Leer DICOM</h2>
     <form (ngSubmit)="onReadDicom()" #dicomForm="ngForm">
@@ -46,7 +43,6 @@
     </form>
   </section>
 
-  <!-- 📤 Resultado -->
   <section class="resultado">
     <h2>📤 Resultado</h2>
     <div *ngIf="loading" class="loader">⏳ Procesando...</div>

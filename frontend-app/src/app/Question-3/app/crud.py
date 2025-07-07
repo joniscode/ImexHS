@@ -15,7 +15,7 @@ def create_entries(db: Session, payload: schemas.Payload):
             db.add(device)
             db.flush()
 
-        db_entry = models.Entry(
+        db_entry = models.Result(
             id=entry.id,
             device_id=device.id,
             avg_before=avg_before,
@@ -29,15 +29,15 @@ def create_entries(db: Session, payload: schemas.Payload):
 
 
 def get_entries(db: Session):
-    return db.query(models.Entry).all()
+    return db.query(models.Result).all()
 
 
 def get_entry(db: Session, entry_id: str):
-    return db.query(models.Entry).filter(models.Entry.id == entry_id).first()
+    return db.query(models.Result).filter(models.Result.id == entry_id).first()
 
 
 def update_entry(db: Session, entry_id: str, new_name: str):
-    entry = db.query(models.Entry).filter(models.Entry.id == entry_id).first()
+    entry = db.query(models.Result).filter(models.Result.id == entry_id).first()
     if entry:
         entry.device.device_name = new_name
         db.commit()
@@ -45,7 +45,7 @@ def update_entry(db: Session, entry_id: str, new_name: str):
 
 
 def delete_entry(db: Session, entry_id: str):
-    entry = db.query(models.Entry).filter(models.Entry.id == entry_id).first()
+    entry = db.query(models.Result).filter(models.Result.id == entry_id).first()
     if entry:
         db.delete(entry)
         db.commit()

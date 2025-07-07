@@ -56,10 +56,8 @@ def list_csvs():
 
 
 from fastapi.staticfiles import StaticFiles
-# 🖼️ Servir carpeta de imágenes DICOM
 os.makedirs("output", exist_ok=True)
 app.mount("/output", StaticFiles(directory="output"), name="output")
 
-# 📄 Servir carpeta de reportes CSV
 os.makedirs("reports", exist_ok=True)
 app.mount("/reports", StaticFiles(directory="reports"), name="reports")
